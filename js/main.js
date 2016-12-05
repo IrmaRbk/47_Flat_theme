@@ -32,3 +32,15 @@ jQuery(function ($) {
     // SLIDE TIGRE:
     $('.carousel.carousel-slider').carousel({full_width: true});
 });
+
+
+// ___________________________
+
+// PARA MI MENÚ
+$(".button-collapse").sideNav();
+
+// HOME | PARA MI SLIDE:
+$(document).ready(function(){
+  $('.slider').slider({full_width: true});
+});
+

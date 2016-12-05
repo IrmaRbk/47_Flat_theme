@@ -8,7 +8,7 @@
     <title>Home | Flat Theme</title>
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="sass/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -19,106 +19,148 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
   </head>
   <body>
     <header>
-        <nav>
+        <nav class="marino">
             <div class="nav-wrapper">
-                <a href="#" class="brand-logo"></a>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a href="#!" class="brand-logo"><img src="./images/logo.png" alt="logo"><!-- aqui va logo --></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="collapsible.html">Services</a></li>
+                    <li><a href="mobile.html">Portfolio</a></li>
+                    <li><a href="collapsible.html">Blog</a></li>
+                    <li><a href="mobile.html">Contact</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
                     <li><a href="sass.html">Home</a></li>
                     <li><a href="badges.html">About Us</a></li>
                     <li><a href="collapsible.html">Services</a></li>
-                    <li><a href="sass.html">Portfolio</a></li>
-                    <li><a href="sass.html">Blog</a></li>
-                    <li><a href="sass.html">Contact</a></li>
+                    <li><a href="mobile.html">Portfolio</a></li>
+                    <li><a href="collapsible.html">Blog</a></li>
+                    <li><a href="mobile.html">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <section> <!-- SLIDE : CON TRES IMG -->
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12 l12"><!-- hide-on-small-and-down hide-on-med-and-down col s4 m4 l4 letra_ch  -->
-                    <div class="carousel carousel-slider ">
-                        <a class="carousel-item img_tigre" href="#one!"><img src="./images/slider/bg1.jpg" alt="Tigre"></a>
-                        <a class="carousel-item" href="#two!"><img src="./images/slider/bg2.jpg" alt="lluvia de hamburguesas"></a>
-                        <a class="carousel-item" href="#three!"><img src="./images/slider/bg3.jpg" alt="lluvia de hamburguesas2"></a>
-                    </div>
-                    <h2>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h2>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
-                </div>
-            </div>
-            <div class="row"> <!-- REDES SOCIALES -->
-                <div class="col s1 m1 l1">
-                    <!-- aquí va mi icono -->
-                </div>
-                <div class="col s3 m3 l3">
-                    <h4>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h4>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
-                </div>
-                <div class="col s1 m1 l1">
-                    <!-- aquí va mi icono -->
-                </div>
-                <div class="col s3 m3 l3">
-                    <h4>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h4>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
-                </div>
-                <div class="col s1 m1 l1">
-                    <!-- aquí va mi icono -->
-                </div>
-                <div class="col s3 m3 l3">
-                    <h4>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h4>
-                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
+        <div class="row ">
+            <div class="col s12 m12 l12">
+                <div class="slider">
+                    <ul class="slides ">
+                        <li>
+                            <img class="img_tigre responsive-img"  src="./images/slider/bg1.jpg" alt="Tigre"> <!-- image 1-->
+                            <div class="caption center-align">
+                                <h3>Powerful and Responsive Web Design</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="img_tigre responsive-img"  src="./images/slider/bg2.jpg" alt="lluvia de hamburguesas"> <!--  image 2-->
+                            <div class="caption left-align">
+                                <h3>Powerful and Responsive Web Design</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="img_tigre responsive-img"  src="./images/slider/bg3.jpg" alt="lluvia de hamburguesas2"> <!--  image 3-->
+                            <div class="caption right-align">
+                                <h3>Powerful and Responsive Web Design</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <div class="row"> <!-- REDES SOCIALES -->
+            <div class="col s1 m1 l1">
+                <!-- aquí va mi icono class="responsive-img circle"  -->
+                <span class="fa fa-twitter-square fa-7x vert" aria-hidden="true"></span><!-- icono twitter -->
+            </div>
+            <div class="col s3 m3 l3">
+                <h4>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
+            </div>
+            <div class="col s1 m1 l1">
+                <!-- aquí va mi icono class="responsive-img circle"  -->
+                <span class="fa fa-facebook-official fa-7x  vert" aria-hidden="true"></span><!-- icono facebook -->
+            </div>
+            <div class="col s3 m3 l3">
+                <h4>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
+            </div>
+            <div class="col s1 m1 l1">
+                <!-- aquí va mi icono class="responsive-img circle"  -->
+                <span class="fa fa-google-plus-square fa-7x vert" aria-hidden="true"></span><!-- icono google-plus -->
+            </div>
+            <div class="col s3 m3 l3">
+                <h4>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h4>
+                <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
+            </div>
+        </div>
+    </div>
     </section>
-    <section>
-        <div class="container"> <!-- SECCIÓN: OUR LATEST PROJECT -->
+    <section><!-- SECCIÓN: OUR LATEST PROJECT -->
+        <div class="container"> 
             <div class="row">
                 <div class="col s3 m3 l3">
-                    <h4>Lorem ipsum dololuta possimus sunt reprehenderit quaerat. Suscipit!</h4>
+                    <h4>Our Latest Proyect</h4>
                     <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
                     <!-- AQUI VAN UNOS BOTONES -->
                 </div>
-                <div class="col s3 m3 l3">
+                <div class="col s3 m3 l3">                    
+                    <img src="images/portfolio/recent/item1.png" alt="item1">
                     <!-- card con img -->
                 </div>
                 <div class="col s3 m3 l3">
+                    <img src="images/portfolio/recent/item2.png" alt="item1">       
                     <!-- card con img -->
                 </div>
                 <div class="col s3 m3 l3">
+                    <img src="images/portfolio/recent/item3.png" alt="item1">
                     <!-- card con img -->
                 </div>
             </div>
         </div>    
     </section>
     <section>
-        <div class="container">
+        <div class="container red"><!-- What our clients say -->
             <div class="row">
-                <div class="col s12 m12 l12">
-                    
+                <div class="col s12 m12 l12 grey-text text-lighten-3">
+                    <h4>What our clients say</h4>
+                    <h6>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt alias facere Esse vo aspernatur eaque libero nobis dolorum.</h6>
                 </div>
             </div>
             <div class="row">
                 <div class="col s6 m6 l6">
-                <!-- texto con cita -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, perferendis odit ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><!-- texto con cita -->                
                 </div>
                 <div class="col s6 m6 l6">
-                <!-- texto con cita -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, perferendis odit ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><!-- texto con cita -->   
                 </div>
             </div>
-            <div class="row">
+            <div class="row ">
                 <div class="col s6 m6 l6">
-                <!-- texto con cita -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, perferendis odit ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><!-- texto con cita -->   
                 </div>
                 <div class="col s6 m6 l6">
-                <!-- texto con cita -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, perferendis odit ut.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p><!-- texto con cita -->   
                 </div>
             </div>
         </div>
     </section>
+
+
+
     <footer>
         <div class="container">
             <div class="row">
@@ -129,41 +171,73 @@
                 </div>
                 <div class="col s3 m3 l3">
                     <p>Company</p>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
-                    <ul>Company Overview</ul>
+                    <ul><!-- esta lista es solo para el HOME -->
+                        <li>Company Overview</li>
+                        <li>Meet the team</li>
+                        <li>Our Awesome Partners</li>
+                        <li>Our Services</li>
+                        <li>Frequently Asked Questions</li>
+                        <li>Contact Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms of Use</li>
+                        <li>Copyright</li>
+                    </ul>
+                    <!-- esto es para las pags. de enlace -->
+                    <!-- <ul>
+                        <li>The Company</li>
+                        <li>Our Team</li>
+                        <li>Our Parters</li>
+                        <li>Our Services</li>
+                        <li>Faq</li>
+                        <li>Contact Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Term of Use</li>
+                        <li>Copyright</li>
+                    </ul> -->
                 </div>
                 <div class="col s3 m3 l3">
                     <p>Latest Blog</p>
                     <div class="row">
                         <div class="col s4 m4 l4">
-                        <p>Lorem ipsum recusandae omnis ab repellat aspernatur tempore obcaecati voluptas sequi!</p>
-                        <p>Lorem aecati error  perspiciatis, consectetur laudantium.</p>
+                        <img src="" alt="">
                         </div>
                         <div class="col s8 m8 l8">
-                        <p>Lorem ipsum recusandae omnis ab repellat aspernatur tempore obcaecati voluptas sequi!</p>
-                        <p>Lorem aecati error  perspiciatis, consectetur laudantium.</p>
+                        <p>Lorem ipsum recusandae omnis ab tempore obcaecati voluptas sequi!</p>
+                        <p>Posted 11 Jul 2013</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s4 m4 l4">
+                        <img src="" alt="">
+                        </div>
+                        <div class="col s8 m8 l8">
+                        <p>Lorem ipsum recusandae omnis ab tempore obcaecati voluptas sequi!</p>
+                        <p>Posted 11 Jul 2013</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s4 m4 l4">
+                        <img src="" alt="">
+                        </div>
+                        <div class="col s8 m8 l8">
+                        <p>Lorem ipsum recusandae omnis ab tempore obcaecati voluptas sequi!</p>
+                        <p>Posted 11 Jul 2013</p>
                         </div>
                     </div>
                 </div>
                 <div class="col s3 m3 l3">
                     <p>Adress</p>
-                    <p>Lorem ipsum recusandae omnis ab repellat aspernatur tempore obcaecati voluptas sequi!</p>
-                    <p>Lorem aecati error  perspiciatis, consectetur laudantium.</p>
-                    <p>Lorem aecati error  perspiciatis, consectetur laudantium.</p>
-                    <p>Lorem aecati error  perspiciatis, consectetur laudantium.</p>
+                    <p>Twitter, Inc.</p>
+                    <p>795 Folsom Ave,Suite 600</p>
+                    <p>San Francisco,CA 94107</p>
+                    <p>P: (123) 456-7890 </p>
                     <p>NEWSLETTER</p>
-                    <button>GO!</button>
+                    <button>GO!</button> <!-- Enter your email Go! -->
                 </div>
                 <div class="row">
                     <div class="col s4 m4 l4">
-                        <p>2013 ShapeBootstrap.All rights reserved.</p>
+                        <p>2013 ShapeBootstrap.All rights reserved.</p> 
+                        <!-- aqui va otro menú: Home About Us Contact Us +flechita -->
                     </div>
                 </div>
             </div>
